@@ -17,7 +17,7 @@ class Tonepoint {
     this.vel = createVector(0, 1)
     let block = floor(this.pos.x / blockwidth)
     this.osc = new p5.Oscillator()
-    this.osc.setType('sine')
+    this.osc.setType('sawtooth')
     switch(block) {
       case 0:
         this.osc.freq(baseFreq)
@@ -32,7 +32,7 @@ class Tonepoint {
         this.osc.freq(baseFreq*3/2)
         break
       case 4:
-        this.osc.freq(baseFreq*16/9)
+        this.osc.freq(baseFreq*15/8)
         break
       default:
         this.osc.freq(baseFreq*2)

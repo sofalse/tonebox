@@ -3,7 +3,7 @@ let timer = 0.0
 let noiseOffset = 0.1
 
 function setup () {
-  createCanvas(640, 800)
+  createCanvas(window.innerWidth, window.innerHeight)
 }
 
 function draw () {
