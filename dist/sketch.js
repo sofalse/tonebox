@@ -1,9 +1,10 @@
+/* eslint-disable */
 let notes = []
 let timer = 0.0
 let noiseOffset = 0.1
 
 function setup () {
-  createCanvas(640, 800)
+  createCanvas(window.innerWidth, window.innerHeight)
 }
 
 function draw () {
@@ -15,7 +16,7 @@ function draw () {
     line(i*blockwidth, 0, i*blockwidth, height)
   }
 
-  // Spawn new tonepoint every 200ms
+  // Spawn new tonepoint every 500ms
   if(millis() - timer >= 500) {
     for(let i=0; i<=round(random(0,2));i++) {
       notes.push(new Tonepoint(noiseOffset))
@@ -33,7 +34,7 @@ function draw () {
     if (!note.played && note.pos.y > 2/3*height) {
       note.osc.amp(0.2, 0.1)
       note.osc.amp(0, 0.5, 0.1)
-      console.log('note played')
+      // console.log('note played')
       note.played = true
     }
     // if(note.played) {
