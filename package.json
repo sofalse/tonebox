@@ -1,0 +1,25 @@
+{
+  "name": "tonebox",
+  "version": "1.0.0",
+  "description": "Random notes player",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sofalse/tonebox.git"
+  },
+  "author": "Michal Wisniewski <j989898@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sofalse/tonebox/issues"
+  },
+  "homepage": "https://github.com/sofalse/tonebox#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
