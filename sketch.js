@@ -34,7 +34,7 @@ function draw () {
     if (!note.played && note.pos.y > 2/3*height) {
       note.osc.amp(0.2, 0.1)
       note.osc.amp(0, 0.5, 0.1)
-      console.log('note played')
+      // console.log('note played')
       note.played = true
     }
     // if(note.played) {
